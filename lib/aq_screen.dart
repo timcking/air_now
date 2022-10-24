@@ -50,7 +50,7 @@ class _AqScreenState extends State<AqScreen> {
     ];
 
     setState(() {
-      double temp = widget.weatherData['data'][0]['temp'];
+      var temp = widget.weatherData['data'][0]['temp'];
       temperature = temp.toInt();
 
       weatherIcon = widget.weatherData['data'][0]['weather']['icon'];
